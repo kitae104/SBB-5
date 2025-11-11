@@ -60,3 +60,17 @@ spring:
       name: test
       password: 1111
       roles: USER
+
+####################################
+# Logging 설정
+####################################
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+        orm:
+          jdbc:
+            bind: trace
